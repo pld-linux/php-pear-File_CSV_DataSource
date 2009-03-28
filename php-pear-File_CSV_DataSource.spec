@@ -1,17 +1,17 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		File
 %define		_subclass	CSV_DataSource
-%define		_status		alpha
+%define		_status		beta
 %define		_pearname	File_CSV_DataSource
 Summary:	%{_pearname} - CSV-file data extraction tool
 Summary(pl.UTF-8):	%{_pearname} - wydobywanie danych w formacie CSV
 Name:		php-pear-%{_pearname}
-Version:	0.2.4
+Version:	0.2.7
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	c1015870369558aadb5e54f51b4abb5e
+# Source0-md5:	11fc31dbef561eb379de8561d49a85c2
 URL:		http://pear.php.net/package/File_CSV_DataSource/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -64,6 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %doc docs/File_CSV_DataSource/{docs/examples,docs/README}
+%dir %{php_pear_dir}/File/CSV
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/File/CSV/DataSource.php
 
