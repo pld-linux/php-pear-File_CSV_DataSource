@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - CSV-file data extraction tool
 Summary(pl.UTF-8):	%{_pearname} - wydobywanie danych w formacie CSV
 Name:		php-pear-%{_pearname}
-Version:	0.2.7
+Version:	1.0.1
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	11fc31dbef561eb379de8561d49a85c2
+# Source0-md5:	3a88a49d33d26f9d9f4a5dfcf7531ea0
 URL:		http://pear.php.net/package/File_CSV_DataSource/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -39,9 +39,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
